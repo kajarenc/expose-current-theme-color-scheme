@@ -1,12 +1,10 @@
 import streamlit as st
 
-st.write(
-    f"Your current theme color scheme is: **:rainbow[{st.context.theme_color_scheme}]**"
-)
+st.write(f"Your current theme color scheme is: **:rainbow[{st.context.color_scheme}]**")
 
 st.write("And here is dog image:")
 
-if st.context.theme_color_scheme == "light":
+if st.context.color_scheme == "light":
     st.image("doglight.jpg")
 else:
     st.image("dogdark.jpg")
